@@ -30,8 +30,7 @@ public class PurchaseController {
 
     @GetMapping("/orders")
     public List<Bill> getBills() {
-        List<Bill> bills = billService.getBills();
-        return bills;
+        return billService.getBills();
     }
 
     @PostMapping("/orders")
